@@ -1,0 +1,18 @@
+/* RESET */
+ul,li,menu {
+    list-style: none;
+}
+
+/* STYLE HEADER */
+.page-header {
+    background-color: #2C3E50;
+    color: white;
+    font-weight: bold;
+}
+
+/* STYLE HERO */
+.hero {
+    background-color: #1ABC9C;
+}
+
+/* DEBUG */
