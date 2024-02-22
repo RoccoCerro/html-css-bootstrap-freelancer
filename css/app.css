@@ -88,6 +88,12 @@ ul,li,menu {
     background-color: #3A546D;
 }
 
+.copy {
+    background-color: #2C3E50;
+    font-size: 10px;
+    color: white;
+}
+
 /* DEBUG */
 .debug .hero {
     height: 500px;
