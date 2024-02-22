@@ -1,6 +1,29 @@
+:root {
+    --background-hero: #1ABC9C;
+}
+
 /* RESET */
 ul,li,menu {
     list-style: none;
+}
+
+/* LAYOUT */
+.container_free {
+    max-width: 250px;
+    margin: 0 auto;
+
+    @media (min-width: 576px) {
+        max-width: 460px;
+        
+        @media (min-width: 768px) {
+            max-width: 660px;
+        }
+
+            @media (min-width: 992px) {
+                max-width: 930px;
+            }
+    }
+    
 }
 
 /* STYLE HEADER */
@@ -12,8 +35,57 @@ ul,li,menu {
 
 /* STYLE HERO */
 .hero {
-    background-color: #1ABC9C;
+    background-color: var(--background-hero);
     width: 100%;
+}
+
+/* STYLE ABOUT */
+.about {
+    background-color: var(--background-hero);
+    width: 100%;
+}
+
+/* STYLE CONTACT-ME */
+.contact-me {
+    & input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        width: 100%;
+        outline: none;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }
+
+    & input:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    & textarea {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3) ;
+        width: 100%;
+        outline: none;
+        margin-bottom: 5px;
+    }
+
+    & button {
+        border: none;
+        background-color: var(--background-hero);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* STYLE FOOTER */
+.connections {
+    background-color: #3A546D;
 }
 
 /* DEBUG */
@@ -26,9 +98,26 @@ ul,li,menu {
     height: 150px;
 
     & .test{
-        content: "swwwwwwwwwwwwwwwwwww";
         width: 100%;
         height: 100%;
         border: 2px solid green;
     }
 }
+
+.debug .about {
+    height: 500px;
+}
+
+.debug .container-sm {
+    border: 3px solid black;
+}
+
+/* .debug .container_free {
+    border: 3px solid yellow;
+    height: 500px;
+} */
+
+/* .debug form {
+    height: 300px;
+    border: 1px solid saddlebrown;
+} */
