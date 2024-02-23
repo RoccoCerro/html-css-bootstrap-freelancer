@@ -48,6 +48,12 @@ img {
 .about {
     background-color: var(--background-hero);
     width: 100%;
+
+    & p {
+        @media (min-width: 576px){
+        column-count: 2;
+        }
+    }
 }
 
 /* STYLE CONTACT-ME */
@@ -111,7 +117,3 @@ img {
 }
 
 /* DEBUG */
-
-.debug .about {
-    height: 500px;
-}
