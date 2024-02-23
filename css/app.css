@@ -3,9 +3,6 @@
 }
 
 /* RESET */
-ul,li,menu {
-    list-style: none;
-}
 
 /* LAYOUT */
 .container_free {
@@ -37,6 +34,18 @@ ul,li,menu {
 .hero {
     background-color: var(--background-hero);
     width: 100%;
+
+    & img {
+        width: 230px;
+    }
+
+    & hr {
+        width: 50px;
+        height: 3px;
+        margin: 0;
+        color: white;
+        opacity: 1;
+    }
 }
 
 /* STYLE ABOUT */
@@ -83,6 +92,10 @@ ul,li,menu {
     }
 }
 
+::placeholder {
+    color: black;
+}
+
 /* STYLE FOOTER */
 .connections {
     background-color: #3A546D;
@@ -97,6 +110,11 @@ ul,li,menu {
 /* DEBUG */
 .debug .hero {
     height: 500px;
+    border: 1px solid red;
+}
+.debug .hero .container-sm {
+    height: 500px;
+    border: solid 2px yellow;
 }
 
 .debug [class^=col] {
