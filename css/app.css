@@ -40,8 +40,19 @@ img {
     width: 100%;
 
     & img {
-        width: 230px;
+        width: 210px;
     }
+}
+
+@media (min-width:768px) {
+    .hero img {
+        width: 250px;
+    }
+}
+
+/* STYLE PORTFOLIO */
+.portfolio img {
+    border-radius: 6px;
 }
 
 /* STYLE ABOUT */
