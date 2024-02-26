@@ -63,6 +63,7 @@ img {
     & p {
         @media (min-width: 576px){
         column-count: 2;
+        column-gap: 1.5 rem;
         }
     }
 }
